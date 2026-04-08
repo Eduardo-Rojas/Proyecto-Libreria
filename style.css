@@ -1,0 +1,38 @@
+:root {
+    --itla-blue: #004d40; /* Tu nuevo verde primario */
+    --itla-red: #ffab00;  /* Tu nuevo ámbar de acento */
+    --bg-light: #f0f2f0;
+}
+
+body { font-family: 'Inter', sans-serif; background-color: var(--bg-light); }
+h1, h2, .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; }
+
+.navbar { 
+    background-color: var(--itla-blue) !important; 
+    border-bottom: 4px solid var(--itla-red); 
+}
+
+.book-card {
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    border: none;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.book-accent {
+    height: 6px;
+    background: linear-gradient(90deg, var(--itla-blue), var(--itla-red));
+    border-radius: 12px 12px 0 0;
+}
+
+.author-avatar {
+    width: 50px; height: 50px;
+    background-color: var(--itla-blue);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; font-weight: bold;
+}
