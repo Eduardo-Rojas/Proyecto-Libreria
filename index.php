@@ -2,10 +2,6 @@
 require_once 'conexion.php'; 
 $libros = $pdo->query("SELECT id_titulo, titulo, tipo, precio, notas FROM titulos")->fetchAll();
 
-$traducciones = [
-    'business' => 'Negocios', 'psychology' => 'Psicología', 'popular_comp' => 'Computación',
-    'trad_cook' => 'Cocina Tradicional', 'mod_cook' => 'Cocina Moderna', 'UNDECIDED' => 'Por definir'
-];
 ?>
 <!DOCTYPE html>
 <html lang="es">
