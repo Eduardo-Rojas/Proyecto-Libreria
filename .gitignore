@@ -1,8 +1,8 @@
-# Ignorar configuración de servidores locales
+
 .htaccess
 error_log
 php_error.log
 
-# Ignorar archivos del sistema
+
 .DS_Store
 Thumbs.db
